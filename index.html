@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selvi Masala</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+SELVI MASALA
+</div>
+
+<nav>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="cart-btn">
+🛒 <span id="cartCount">0</span>
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+<h1>Pure Spices From Our Kitchen To Yours</h1>
+
+<p>
+Traditional taste, premium quality and homemade goodness in every pack.
+</p>
+
+<a href="#products">
+<button>Shop Now</button>
+</a>
+
+</div>
+
+<div class="hero-image">
+<img src="images/hero.jpg" alt="">
+</div>
+
+</section>
+
+<section id="products" class="products">
+
+<h2>Our Products</h2>
+
+<div class="product-grid">
+
+<!-- TURMERIC -->
+
+<div class="card">
+
+<img src="images/turmeric.jpg">
+
+<h3>Turmeric Powder</h3>
+
+<select class="variant">
+<option value="400">1 Kg - ₹400</option>
+<option value="200">500g - ₹200</option>
+</select>
+
+<button onclick="addToCart('Turmeric Powder',this)">
+Add to Cart
+</button>
+
+</div>
+
+<!-- CORIANDER -->
+
+<div class="card">
+
+<img src="images/coriander.jpg">
+
+<h3>Coriander Powder</h3>
+
+<select class="variant">
+<option value="250">1 Kg - ₹250</option>
+<option value="125">500g - ₹125</option>
+</select>
+
+<button onclick="addToCart('Coriander Powder',this)">
+Add to Cart
+</button>
+
+</div>
+
+<!-- CHILLI -->
+
+<div class="card">
+
+<img src="images/chilli.jpg">
+
+<h3>Chilli Powder</h3>
+
+<select class="variant">
+<option value="400">1 Kg - ₹400</option>
+<option value="200">500g - ₹200</option>
+</select>
+
+<button onclick="addToCart('Chilli Powder',this)">
+Add to Cart
+</button>
+
+</div>
+
+<!-- CUMIN -->
+
+<div class="card">
+
+<img src="images/cumin.jpg">
+
+<h3>Cumin Powder</h3>
+
+<select class="variant">
+<option value="980">1 Kg - ₹980</option>
+<option value="490">500g - ₹490</option>
+</select>
+
+<button onclick="addToCart('Cumin Powder',this)">
+Add to Cart
+</button>
+
+</div>
+
+<!-- FENNEL -->
+
+<div class="card">
+
+<img src="images/fennel.jpg">
+
+<h3>Fennel Seed Powder</h3>
+
+<select class="variant">
+<option value="400">1 Kg - ₹400</option>
+<option value="200">500g - ₹200</option>
+</select>
+
+<button onclick="addToCart('Fennel Seed Powder',this)">
+Add to Cart
+</button>
+
+</div>
+
+<!-- MIXED -->
+
+<div class="card">
+
+<img src="images/mixed.jpg">
+
+<h3>Mixed Masala</h3>
+
+<select class="variant">
+<option value="400">1 Kg - ₹400</option>
+<option value="200">500g - ₹200</option>
+</select>
+
+<button onclick="addToCart('Mixed Masala',this)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cart-section">
+
+<h2>Your Order</h2>
+
+<input
+type="text"
+id="customerName"
+placeholder="Customer Name">
+
+<div id="cartItems"></div>
+
+<h3>Total: ₹<span id="totalAmount">0</span></h3>
+
+<button class="whatsapp-btn" onclick="sendWhatsApp()">
+Order on WhatsApp
+</button>
+
+</section>
+
+<section id="about" class="about">
+
+<h2>Why Selvi Masala?</h2>
+
+<p>
+Freshly packed spices made with care and quality.
+Bringing authentic flavour to every kitchen.
+</p>
+
+</section>
+
+<footer id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📞 +91 9566700910</p>
+
+<p>Selvi Masala</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
