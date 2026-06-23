@@ -29,7 +29,11 @@ position:relative;
 width:90%;
 max-width:450px;">
 
-<span onclick="document.getElementById('launchPopup').style.display='none'"
+<span onclick="
+document.getElementById('launchPopup').style.display='none';
+document.querySelector('.hero-content').style.animation='slideLeft 1s ease';
+document.querySelector('.hero-image').style.animation='zoomIn 1.2s ease';
+"
 style="
 position:absolute;
 top:-15px;
