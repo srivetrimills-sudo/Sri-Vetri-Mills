@@ -218,20 +218,39 @@ Add to Cart
 
 <section class="cart-section">
 
-<h2>Your Order</h2>
+<h2>Checkout</h2>
+
+<div class="checkout-box">
 
 <input
 type="text"
 id="customerName"
-placeholder="Customer Name">
+placeholder="👤 Full Name">
+
+<input
+type="tel"
+id="customerMobile"
+placeholder="📞 Mobile Number">
+
+<textarea
+id="customerAddress"
+placeholder="🏠 Full Address"
+rows="4"></textarea>
+
+<input
+type="number"
+id="customerPincode"
+placeholder="📍 Pincode">
 
 <div id="cartItems"></div>
 
-<h3>Total: ₹<span id="totalAmount">0</span></h3>
+<h3>Total : ₹<span id="totalAmount">0</span></h3>
 
 <button class="whatsapp-btn" onclick="sendWhatsApp()">
-Order on WhatsApp
+🛒 Order on WhatsApp
 </button>
+
+</div>
 
 </section>
 
