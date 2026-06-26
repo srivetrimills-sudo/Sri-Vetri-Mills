@@ -254,3 +254,35 @@ font-size:38px;
 }
 
 }
+
+.checkout-box{
+background:#fff;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+max-width:700px;
+margin:auto;
+}
+
+.checkout-box input,
+.checkout-box textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:17px;
+font-family:inherit;
+}
+
+.checkout-box input:focus,
+.checkout-box textarea:focus{
+outline:none;
+border-color:#8b5e3c;
+box-shadow:0 0 8px rgba(139,94,60,.2);
+}
+
+.whatsapp-btn{
+width:100%;
+margin-top:20px;
+}
