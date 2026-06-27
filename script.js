@@ -112,7 +112,6 @@ item.variant +
 "%0A";
 });
 
-message +=
 const grandTotal = total + shipping;
 
 message +=
