@@ -1,5 +1,6 @@
 let cart = [];
 let total = 0;
+const shipping = 60;
 
 function addToCart(productName, button){
 
@@ -63,7 +64,8 @@ X
 `;
 });
 
-totalAmount.innerText = total;
+const grandTotal = cart.length > 0 ? total + shipping : 0;
+totalAmount.innerText = grandTotal;
 
 cartCount.innerText = cart.length;
 }
@@ -111,8 +113,14 @@ item.variant +
 });
 
 message +=
-"%0A*Total Amount : ₹" +
-total +
+const grandTotal = total + shipping;
+
+message +=
+"%0A%0A🚚 Shipping : ₹60";
+
+message +=
+"%0A💰 *Grand Total : ₹" +
+grandTotal +
 "*";
 
 window.open(
