@@ -10,11 +10,14 @@ const variant = card.querySelector(".variant");
 
 const selectedText = variant.options[variant.selectedIndex].text;
 
-const price = Number(variant.value);
+const qty = Number(card.querySelector(".qty").value);
+
+const price = Number(variant.value) * qty;
 
 cart.push({
 name: productName,
 variant: selectedText,
+qty:qty,
 price: price
 });
 
@@ -40,7 +43,7 @@ cartItems.innerHTML += `
 
 <div>
 ${item.name}<br>
-<small>${item.variant}</small>
+<small>${item.variant} × ${item.qty}</small>
 </div>
 
 <div>
@@ -109,6 +112,10 @@ message +=
 item.name +
 " - " +
 item.variant +
+" × " +
+item.qty +
+" = ₹" +
+item.price +
 "%0A";
 });
 
